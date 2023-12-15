@@ -16,7 +16,7 @@ public class Sketch extends PApplet {
   ArrayList<PVector> flowers = new ArrayList<PVector>();
   ArrayList<Raindrop> raindrops = new ArrayList<Raindrop>();
 
-  // Flags for various actions
+  // boolean for various actions
   boolean isDragging = false;
   boolean isFlowerClicked = false;
 
@@ -149,7 +149,7 @@ public class Sketch extends PApplet {
   }
 
   /**
-   * Handles key press events to set corresponding movement flags.
+   * Handles key press events to set corresponding movement boolean.
    */
   public void keyPressed() {
     if (keyPressed) {
@@ -174,7 +174,7 @@ public class Sketch extends PApplet {
   }
 
   /**
-   * Handles key release events to reset corresponding movement flags.
+   * Handles key release events to reset corresponding movement boolean.
    */
   public void keyReleased() {
     if (keyCode == UP) {
